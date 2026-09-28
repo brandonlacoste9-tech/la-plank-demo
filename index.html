@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Plank — Burgers, poutines & fast-food réinventé à Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="La Plank à Saint-Jean-sur-Richelieu — burgers gastronomiques, poutines artisanales, hot-dogs, mac'n'cheese, grilled cheese et cocktails. 268 Rue Richelieu. Appelez le (579) 362-3332.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">LP</span>
+      <span class="brand-text">La <strong>Plank</strong></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#why" data-i18n="nav.why">Pourquoi nous</a>
+      <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
+      <a href="#reviews" data-i18n="nav.reviews">Avis</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <a href="tel:+15793623332" class="btn btn-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-i18n="nav.call">579 362-3332</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"><img src="images/hero.jpg" alt="La Plank — burger gastronomique"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-kicker" data-i18n="hero.kicker">Saint-Jean-sur-Richelieu, Québec · 4,9★ sur 283 avis Google</p>
+    <h1 data-i18n="hero.title">Le fast-food,<br>réinventé.</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Burgers généreux, poutines artisanales et cocktails — du classique au grandiose, servi avec le sourire au cœur du Vieux-Saint-Jean.</p>
+    <div class="hero-ctas">
+      <a href="tel:+15793623332" class="btn btn-primary" data-i18n="hero.cta1">Commander / Réserver</a>
+      <a href="#menu" class="btn btn-ghost" data-i18n="hero.cta2">Voir le menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="promo-band">
+  <div class="wrap promo-inner">
+    <div class="promo-copy">
+      <p class="promo-kicker" data-i18n="promo.kicker">Livraison</p>
+      <h2 data-i18n="promo.title">On livre avec Uber Eats</h2>
+      <p data-i18n="promo.text">Envie de La Plank sans sortir? Commandez vos burgers et poutines préférés en ligne, livrés chauds chez vous.</p>
+    </div>
+    <a href="https://www.ubereats.com/ca-fr/store/la-plank/ju5AYesVVliSDM5JfbNjqQ" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="promo.cta">Commander en ligne</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-num" data-i18n="stats.ratingNum">4,9★</span><span class="stat-label" data-i18n="stats.rating">sur 283 avis Google</span></div>
+    <div class="stat"><span class="stat-num" data-i18n="stats.burgersNum">14</span><span class="stat-label" data-i18n="stats.burgers">sortes de burgers</span></div>
+    <div class="stat"><span class="stat-num" data-i18n="stats.menuNum">6</span><span class="stat-label" data-i18n="stats.menu">spécialités au menu</span></div>
+    <div class="stat"><span class="stat-num" data-i18n="stats.lunchNum">6 j / 7</span><span class="stat-label" data-i18n="stats.lunch">midi et soir</span></div>
+  </div>
+</section>
+
+<section class="services" id="menu">
+  <div class="wrap">
+    <p class="kicker" data-i18n="menu.kicker">À la carte</p>
+    <h2 data-i18n="menu.title">Les incontournables de La Plank</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10a8 8 0 0 1 16 0H4z"/><path d="M4 10c0 3 3 5 8 5s8-2 8-5"/><path d="M7 18c0 1.5 2.5 2.5 5 2.5s5-1 5-2.5"/></svg></div>
+        <h3 data-i18n="menu.m1t">Burgers gastronomiques</h3>
+        <p data-i18n="menu.m1d">14 sortes de burgers généreux, galettes substantielles et pains grillés — l'option végé est au menu aussi.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h16l-1.5 7a2 2 0 0 1-2 1.6h-9A2 2 0 0 1 5.5 17L4 10z"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg></div>
+        <h3 data-i18n="menu.m2t">Poutines artisanales</h3>
+        <p data-i18n="menu.m2d">Frites coupées à la main, fromage en grains frais et sauce traditionnelle — plusieurs recettes originales.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M5 12c0-3 3-5 7-5s7 2 7 5"/><path d="M6 17c1.5 1.5 4 2 6 2s4.5-.5 6-2"/></svg></div>
+        <h3 data-i18n="menu.m3t">Hot-dogs géants</h3>
+        <p data-i18n="menu.m3d">Des hot-dogs XXL, garnis sans retenue — une valeur sûre pour les grosses faims.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 13h16a2 2 0 0 1 2 2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-2a2 2 0 0 1 2-2z"/><path d="M8 13V9a4 4 0 0 1 8 0v4"/><path d="M12 9v4"/></svg></div>
+        <h3 data-i18n="menu.m4t">Mac'n'cheese</h3>
+        <p data-i18n="menu.m4d">Porc effiloché, poulet buffalo, mexicain ou régulier — quatre versions réconfortantes.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="9" rx="2"/><path d="M4 10.5L20 10.5M9 8v9M15 8v9"/></svg></div>
+        <h3 data-i18n="menu.m5t">Grilled cheese</h3>
+        <p data-i18n="menu.m5d">Fromage fondant à souhait, pain parfaitement grillé — le classique réinventé.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h14l-7 8v7"/><path d="M9 21h6M12 19v2"/><path d="M7.5 7h9"/></svg></div>
+        <h3 data-i18n="menu.m6t">Cocktails & bières</h3>
+        <p data-i18n="menu.m6d">Cocktails créatifs, bières en fût et bonne bière — le resto-bar du Vieux-Saint-Jean.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="walkin">
+  <div class="wrap walkin-inner">
+    <div class="walkin-item">
+      <span class="walkin-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4 6l16 12M20 6L4 18"/></svg></span>
+      <div><strong data-i18n="walkin.w1t">Terrasse</strong><span data-i18n="walkin.w1d">Profitez de l'été dehors</span></div>
+    </div>
+    <div class="walkin-item">
+      <span class="walkin-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M6 17l2-7h8l2 7M8 20v-3M16 20v-3"/></svg></span>
+      <div><strong data-i18n="walkin.w2t">Livraison & à emporter</strong><span data-i18n="walkin.w2d">Sur Uber Eats ou au comptoir</span></div>
+    </div>
+    <div class="walkin-item">
+      <span class="walkin-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8a5 5 0 1 0-9.9-1H3v4h4.1A5 5 0 0 0 17 8z"/><path d="M3 12v7h18v-7"/></svg></span>
+      <div><strong data-i18n="walkin.w3t">Traiteur</strong><span data-i18n="walkin.w3d">Pour vos événements</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap why-grid">
+    <div class="why-img"><img src="images/work.jpg" alt="Poutine artisanale préparée à La Plank"></div>
+    <div class="why-copy">
+      <p class="kicker" data-i18n="why.kicker">Pourquoi nous choisir</p>
+      <h2 data-i18n="why.title">Le fast-food qui n'en a pas l'air</h2>
+      <p data-i18n="why.intro">On transforme le fast-food classique en plats modernes et généreux : ingrédients de qualité, portions qui impressionnent et une équipe qui vous accueille comme des amis.</p>
+      <ul class="why-list">
+        <li><strong data-i18n="why.l1t">Ingrédients de qualité</strong><span data-i18n="why.l1d">Frites coupées à la main, fromage en grains frais, galettes substantielles.</span></li>
+        <li><strong data-i18n="why.l2t">Portions généreuses</strong><span data-i18n="why.l2d">Ici, personne ne repart avec la faim — c'est une promesse.</span></li>
+        <li><strong data-i18n="why.l3t">Ambiance resto-bar</strong><span data-i18n="why.l3d">Terrasse, cocktails et bonne musique au cœur du Vieux-Saint-Jean.</span></li>
+        <li><strong data-i18n="why.l4t">Service rapide et souriant</strong><span data-i18n="why.l4d">Sur place, à emporter ou en livraison — toujours avec le sourire.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <p class="kicker" data-i18n="gallery.kicker">Ça donne faim</p>
+    <h2 data-i18n="gallery.title">Un aperçu de l'assiette</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="images/gallery-1.jpg" alt="Mac'n'cheese gratiné">
+        <figcaption data-i18n="gallery.c1">Mac'n'cheese gratiné, quatre versions au menu</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery-2.jpg" alt="Terrasse et cocktails à La Plank">
+        <figcaption data-i18n="gallery.c2">Terrasse, cocktails et bonne compagnie</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="kicker kicker-light" data-i18n="reviews.kicker">Ils en parlent</p>
+    <h2 data-i18n="reviews.title">4,9★ sur 283 avis Google</h2>
+    <div class="review-cards">
+      <a class="review-cta-card" href="https://www.google.com/maps/search/La+Plank+Saint-Jean-sur-Richelieu" target="_blank" rel="noopener">
+        <span class="stars">★★★★★</span>
+        <span data-i18n="reviews.more">Voyez ce que les clients disent de nous sur Google</span>
+        <span class="review-cta-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <p class="kicker" data-i18n="faq.kicker">Bon à savoir</p>
+    <h2 data-i18n="faq.title">Questions fréquentes</h2>
+    <div class="faq-list">
+      <details open>
+        <summary data-i18n="faq.q1">Livrez-vous à domicile?</summary>
+        <p data-i18n="faq.a1">Oui — retrouvez La Plank sur Uber Eats pour une livraison à domicile, ou passez votre commande à emporter au comptoir.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">Avez-vous une terrasse?</summary>
+        <p data-i18n="faq.a2">Oui! Profitez de notre terrasse pendant la belle saison, au cœur du Vieux-Saint-Jean.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">Faites-vous du traiteur pour des événements?</summary>
+        <p data-i18n="faq.a3">Oui — contactez-nous pour vos partys et événements, on s'occupe du festin.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">Quelles sont vos heures d'ouverture?</summary>
+        <p data-i18n="faq.a4">Mar à Mer : 11 h 30 – 14 h et 16 h 30 – 20 h. Jeu à Ven : 11 h 30 – 14 h et 16 h 30 – 21 h. Sam : 11 h 30 – 21 h. Dim : 11 h 30 – 20 h. Fermé le lundi.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="kicker" data-i18n="contact.kicker">Venez nous voir</p>
+    <h2 data-i18n="contact.title">Commander ou réserver</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.addr">Adresse</span>
+          <span>268 Rue Richelieu<br>Saint-Jean-sur-Richelieu, QC J3B 6X8</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.phone">Téléphone</span>
+          <span><a href="tel:+15793623332">(579) 362-3332</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.email">Courriel</span>
+          <span><a href="mailto:info@laplank.com">info@laplank.com</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.hours">Heures</span>
+          <span data-i18n="contact.hoursVal">Mar – Mer : 11 h 30 – 14 h, 16 h 30 – 20 h<br>Jeu – Ven : 11 h 30 – 14 h, 16 h 30 – 21 h<br>Sam : 11 h 30 – 21 h<br>Dim : 11 h 30 – 20 h<br>Lun : fermé</span>
+        </div>
+        <a href="tel:+15793623332" class="btn btn-primary" data-i18n="contact.cta">Appelez pour commander</a>
+        <a href="mailto:info@laplank.com" class="btn btn-ghost-dark" data-i18n="contact.cta2">Écrivez-nous</a>
+      </div>
+      <div class="contact-map">
+        <iframe title="La Plank map" src="https://maps.google.com/maps?q=268%20Rue%20Richelieu%2C%20Saint-Jean-sur-Richelieu%20QC%20J3B%206X8&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="brand-text">La <strong>Plank</strong></span>
+    <p data-i18n="footer.tag">Burgers, poutines & fast-food réinventé · Saint-Jean-sur-Richelieu, Québec</p>
+    <p class="footer-small">268 Rue Richelieu, Saint-Jean-sur-Richelieu QC J3B 6X8 · <a href="tel:+15793623332">(579) 362-3332</a> · <a href="mailto:info@laplank.com">info@laplank.com</a></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
